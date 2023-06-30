@@ -29,7 +29,7 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
   @override
   void initState() {
     super.initState();
-    _requestPermission();
+    
     _initAudioRecorder();
   }
 
@@ -70,6 +70,7 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
   }
 
   Future<void> _startRecording() async {
+    await _requestPermission();
     _timer = Timer.periodic(Duration(seconds: 1), (_) {
       setState(() {
         _elapsedTime++;
