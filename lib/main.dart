@@ -36,9 +36,7 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
   Future _requestPermission() async {
     Map<Permission, PermissionStatus> statuses = await [
       Permission.microphone,
-      Permission.audio,
-      Permission.mediaLibrary,
-      Permission.storage
+      Permission.audio
     ].request();
   }
 
