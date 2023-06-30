@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:io';
-import 'package:audio_session/audio_session.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sound/flutter_sound.dart';
@@ -30,7 +29,7 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
   void initState() {
     super.initState();
     
-    _initAudioRecorder();
+    _configAudioRecorder();
   }
 
   Future _requestPermission() async {
@@ -41,28 +40,8 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
   }
 
 
-  Future<void> _initUrl() async {
-    try {
-      final player = AudioPlayer(playerId: "mubi");
-      await player.play(UrlSource(
-          'https://s3.amazonaws.com/scifri-episodes/scifri20181123-episode.mp3'));
-    } catch (e) {
-      print("Error loading audio source: $e");
-    }
-  }
-
-  Future<void> _initLocal() async {
-    try {
-      final player = AudioPlayer(playerId: "mubi");
-      await player.setSourceDeviceFile(_filePath);
-      await player.play(DeviceFileSource(_filePath));
-    } catch (e) {
-      print("Error loading audio source: $e");
-    }
-  }
-
-  Future<void> _initAudioRecorder() async {
-    await _audioRecorder!.openRecorder();
+  Future<void> _configAudioRecorder() async {
+    await _audioRecorder.openRecorder();
   }
 
   Future<void> _startRecording() async {
@@ -94,12 +73,23 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     await _audioRecorder.stopRecorder();
   }
 
-  Future<void> _playAudio() async {
+  Future<void> _playAudioLocal() async {
     try {
-      await _audioPlayer.openPlayer();
-      await _audioPlayer.startPlayer(fromURI: _filePath, codec: Codec.aacMP4);
+      final player = AudioPlayer(playerId: "teste1");
+      await player.setSourceDeviceFile(_filePath);
+      await player.play(DeviceFileSource(_filePath));
     } catch (e) {
-      print('Erro ao reproduzir áudio: $e');
+      print("Error loading audio source: $e");
+    }
+  }
+
+  Future<void> _playAudioServer() async {
+    try {
+      final player = AudioPlayer(playerId: "teste1");
+      await player.play(UrlSource(
+          'https://s3.amazonaws.com/scifri-episodes/scifri20181123-episode.mp3'));
+    } catch (e) {
+      print("Error loading audio source: $e");
     }
   }
 
@@ -108,13 +98,6 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     _audioPlayer.resumePlayer();
     _timer?.cancel();
     super.dispose();
-  }
-
-  Future<void> _requestStoragePermission() async {
-    PermissionStatus status = await Permission.storage.request();
-    if (status.isGranted) {
-    } else if (status.isDenied) {
-    } else if (status.isPermanentlyDenied) {}
   }
 
   @override
@@ -136,11 +119,11 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
               child: Text('Stop Recording'),
             ),
             ElevatedButton(
-              onPressed: _initLocal,
+              onPressed: _playAudioLocal,
               child: Text('Play Recording'),
             ),
             ElevatedButton(
-              onPressed: _initUrl,
+              onPressed: _playAudioServer,
               child: Text('Play Recording server'),
             ),
             SizedBox(height: 16),

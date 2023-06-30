@@ -1,4 +1,4 @@
-#Fri Jun 30 13:43:16 BRT 2023
+#Fri Jun 30 18:55:28 BRT 2023
 base.0=/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
