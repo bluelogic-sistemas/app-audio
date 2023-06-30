@@ -38,9 +38,7 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
       Permission.microphone,
       Permission.audio,
       Permission.mediaLibrary,
-      Permission.storage,
-      Permission.speech,
-      Permission.photos
+      Permission.storage
     ].request();
   }
 
