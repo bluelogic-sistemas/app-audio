@@ -1,0 +1,19 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /media/fernando/develop1/Desenvolvimento/Mobile/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/audio_session-0.1.13/android/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /media/fernando/develop1/Desenvolvimento/Mobile/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/audio_session-0.1.13/android/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /media/fernando/develop1/Desenvolvimento/Mobile/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/audio_session-0.1.13/android/src/main/AndroidManifest.xml:1:1-3:12
+	package
+		ADDED from /media/fernando/develop1/Desenvolvimento/Mobile/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/audio_session-0.1.13/android/src/main/AndroidManifest.xml:2:3-40
+		INJECTED from /media/fernando/develop1/Desenvolvimento/Mobile/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/audio_session-0.1.13/android/src/main/AndroidManifest.xml
+		INJECTED from /media/fernando/develop1/Desenvolvimento/Mobile/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/audio_session-0.1.13/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /media/fernando/develop1/Desenvolvimento/Mobile/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/audio_session-0.1.13/android/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /media/fernando/develop1/Desenvolvimento/Mobile/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/audio_session-0.1.13/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /media/fernando/develop1/Desenvolvimento/Mobile/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/audio_session-0.1.13/android/src/main/AndroidManifest.xml
+INJECTED from /media/fernando/develop1/Desenvolvimento/Mobile/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/audio_session-0.1.13/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /media/fernando/develop1/Desenvolvimento/Mobile/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/audio_session-0.1.13/android/src/main/AndroidManifest.xml
+		ADDED from /media/fernando/develop1/Desenvolvimento/Mobile/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/audio_session-0.1.13/android/src/main/AndroidManifest.xml
+		INJECTED from /media/fernando/develop1/Desenvolvimento/Mobile/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/audio_session-0.1.13/android/src/main/AndroidManifest.xml

@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/app/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/app/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/app/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/app/intermediates/res/merged/debug/drawable-v21_launch_background.xml.flat",
+        "source": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/res/drawable-v21/launch_background.xml"
+    },
+    {
+        "merged": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/app/intermediates/res/merged/debug/drawable_launch_background.xml.flat",
+        "source": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/res/drawable/launch_background.xml"
+    },
+    {
+        "merged": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/app/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/app/intermediates/res/merged/debug/xml_network_security_config.xml.flat",
+        "source": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/res/xml/network_security_config.xml"
+    },
+    {
+        "merged": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/app/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    }
+]

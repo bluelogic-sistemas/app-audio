@@ -1,0 +1,216 @@
+-- Merging decision tree log ---
+application
+INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:9:4-39:19
+MERGED from [androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:15:5-16:19
+MERGED from [com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:15:5-16:19
+MERGED from [androidx.core:core:1.8.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/fernando/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/fernando/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.8.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:24:18-86
+	android:name
+		INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml
+manifest
+ADDED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:1:1-40:12
+INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:1:1-40:12
+INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:1:1-40:12
+INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:1:1-40:12
+MERGED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:1:1-40:12
+MERGED from [:permission_handler_android] /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/permission_handler_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:audioplayers_android] /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/audioplayers_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:path_provider_android] /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:audio_session] /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/audio_session/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_sound] /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/flutter_sound/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/ad201fac15a88598107ec645f351f5b4/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.core:core-ktx:1.8.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/4df422ea6fd7079acb918f2155c36e3d/jetified-core-ktx-1.8.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:2:1-18:12
+MERGED from [androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.media2:media2-common:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/d9d6b835290ecf662a4cc412ea794478/jetified-media2-common-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.4.1] /home/fernando/.gradle/caches/transforms-2/files-2.1/b6989a794145e8b5c8863d058c5a30a6/media-1.4.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/062c584e7105f32bea72d749c12db8a1/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8601dd65e0c6893d5abc5ccde1e2cab3/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/6c6575c923e75933616af1a602db32e0/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/1463556a47b0b11e0e32553482070255/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/09c1773ed3597f8bec6064dc26d157be/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ae39e38aa58f5c391f29a4bfad4a41a4/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/92d1f830d8a4f76d15ea1f849fb6f29f/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/172ae1f46f014e6681a2cc350fa8b737/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/61fd575f974e3d768efc2f6a143e0eae/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/986216458f3c0df423ee68e7f1177976/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/9ccab238727e236e8aff01a0f95cebe4/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.8.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/fernando/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/69ba5a98805d81d755806668ff70d04f/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /home/fernando/.gradle/caches/transforms-2/files-2.1/8578375fbf5df5bbe65cca21a6cd6acf/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/9a0e475eb211916dfa0da9de1d6c02a3/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8d7928c9f52af5f964a662866fcebb3e/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8108bc8c5f35a568f919dbab3be0e175/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/403e5322101e882ebd13d146c86f92ca/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/16e110bf603f94cf61f970a18f3907e3/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/9ed314abc3df537a2d48c1cb6d65998e/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/5bfc0955e244073bdc8cc139cda5e092/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:2:5-36
+		INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml
+		INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml
+		ADDED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:1:1-40:12
+		INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/debug/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml
+		ADDED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:1:1-40:12
+		INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:3:6-67
+MERGED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:3:6-67
+MERGED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:3:6-67
+	android:name
+		ADDED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:3:23-65
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:4:5-71
+	android:name
+		ADDED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:4:22-68
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:5:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:6:22-78
+uses-sdk
+INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml
+INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml
+MERGED from [:permission_handler_android] /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/permission_handler_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler_android] /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/permission_handler_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:audioplayers_android] /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/audioplayers_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:audioplayers_android] /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/audioplayers_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:path_provider_android] /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:audio_session] /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/audio_session/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:audio_session] /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/audio_session/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_sound] /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/flutter_sound/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_sound] /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/build/flutter_sound/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window-java:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/ad201fac15a88598107ec645f351f5b4/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/ad201fac15a88598107ec645f351f5b4/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.8.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/4df422ea6fd7079acb918f2155c36e3d/jetified-core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.8.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/4df422ea6fd7079acb918f2155c36e3d/jetified-core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media2:media2-common:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/d9d6b835290ecf662a4cc412ea794478/jetified-media2-common-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media2:media2-common:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/d9d6b835290ecf662a4cc412ea794478/jetified-media2-common-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.4.1] /home/fernando/.gradle/caches/transforms-2/files-2.1/b6989a794145e8b5c8863d058c5a30a6/media-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.4.1] /home/fernando/.gradle/caches/transforms-2/files-2.1/b6989a794145e8b5c8863d058c5a30a6/media-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/062c584e7105f32bea72d749c12db8a1/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/062c584e7105f32bea72d749c12db8a1/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8601dd65e0c6893d5abc5ccde1e2cab3/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8601dd65e0c6893d5abc5ccde1e2cab3/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/6c6575c923e75933616af1a602db32e0/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/6c6575c923e75933616af1a602db32e0/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/1463556a47b0b11e0e32553482070255/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/1463556a47b0b11e0e32553482070255/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/09c1773ed3597f8bec6064dc26d157be/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/09c1773ed3597f8bec6064dc26d157be/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ae39e38aa58f5c391f29a4bfad4a41a4/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ae39e38aa58f5c391f29a4bfad4a41a4/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/92d1f830d8a4f76d15ea1f849fb6f29f/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/92d1f830d8a4f76d15ea1f849fb6f29f/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/172ae1f46f014e6681a2cc350fa8b737/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/172ae1f46f014e6681a2cc350fa8b737/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/61fd575f974e3d768efc2f6a143e0eae/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/61fd575f974e3d768efc2f6a143e0eae/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/986216458f3c0df423ee68e7f1177976/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/986216458f3c0df423ee68e7f1177976/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/9ccab238727e236e8aff01a0f95cebe4/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/9ccab238727e236e8aff01a0f95cebe4/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.8.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/fernando/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/fernando/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/69ba5a98805d81d755806668ff70d04f/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/69ba5a98805d81d755806668ff70d04f/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /home/fernando/.gradle/caches/transforms-2/files-2.1/8578375fbf5df5bbe65cca21a6cd6acf/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /home/fernando/.gradle/caches/transforms-2/files-2.1/8578375fbf5df5bbe65cca21a6cd6acf/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/9a0e475eb211916dfa0da9de1d6c02a3/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/9a0e475eb211916dfa0da9de1d6c02a3/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8d7928c9f52af5f964a662866fcebb3e/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8d7928c9f52af5f964a662866fcebb3e/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8108bc8c5f35a568f919dbab3be0e175/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8108bc8c5f35a568f919dbab3be0e175/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/403e5322101e882ebd13d146c86f92ca/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/403e5322101e882ebd13d146c86f92ca/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/16e110bf603f94cf61f970a18f3907e3/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/16e110bf603f94cf61f970a18f3907e3/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/9ed314abc3df537a2d48c1cb6d65998e/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/9ed314abc3df537a2d48c1cb6d65998e/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/5bfc0955e244073bdc8cc139cda5e092/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/5bfc0955e244073bdc8cc139cda5e092/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/debug/AndroidManifest.xml
+INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml
+		INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml
+		INJECTED from /media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/debug/AndroidManifest.xml
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+uses-permission#android.permission.BLUETOOTH
+ADDED from [com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from [com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:11:22-65
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:12:5-68
+	android:name
+		ADDED from [com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:12:22-65
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from [com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from [com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:13:22-77
+queries
+ADDED from [androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:24:5-34:15
+MERGED from [androidx.media:media:1.4.1] /home/fernando/.gradle/caches/transforms-2/files-2.1/b6989a794145e8b5c8863d058c5a30a6/media-1.4.1/AndroidManifest.xml:24:5-28:15
+MERGED from [androidx.media:media:1.4.1] /home/fernando/.gradle/caches/transforms-2/files-2.1/b6989a794145e8b5c8863d058c5a30a6/media-1.4.1/AndroidManifest.xml:24:5-28:15
+intent#action:name:android.media.browse.MediaBrowserService
+ADDED from [androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:25:9-27:18
+action#android.media.browse.MediaBrowserService
+ADDED from [androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:26:13-79
+	android:name
+		ADDED from [androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:26:21-76
+intent#action:name:androidx.media2.session.MediaSessionService
+ADDED from [androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:28:9-30:18
+action#androidx.media2.session.MediaSessionService
+ADDED from [androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:29:13-82
+	android:name
+		ADDED from [androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:29:21-79
+intent#action:name:androidx.media2.session.MediaLibraryService
+ADDED from [androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:31:9-33:18
+action#androidx.media2.session.MediaLibraryService
+ADDED from [androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:32:13-82
+	android:name
+		ADDED from [androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:32:21-79

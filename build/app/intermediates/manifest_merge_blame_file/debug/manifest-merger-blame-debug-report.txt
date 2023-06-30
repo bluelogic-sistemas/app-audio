@@ -1,0 +1,112 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.app_audio"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="18"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:3:6-67
+14-->/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:3:23-65
+15    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+15-->/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:4:5-71
+15-->/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:4:22-68
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:5:5-80
+16-->/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:5:22-77
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:6:5-81
+17-->/media/fernando/develop1/Desenvolvimento/projeto_code_io/ProjetosEmAndamento/MUBI/desenvolvimento/app-audio/android/app/src/main/AndroidManifest.xml:6:22-78
+18    <uses-permission android:name="android.permission.BLUETOOTH" />
+18-->[com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:11:5-68
+18-->[com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:11:22-65
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->[com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:12:5-68
+19-->[com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:12:22-65
+20    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+20-->[com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:13:5-80
+20-->[com.github.canardoux:flutter_sound_core:9.2.13] /home/fernando/.gradle/caches/transforms-2/files-2.1/a90ce3de34e6a5e108d78da644c7062c/jetified-flutter_sound_core-9.2.13/AndroidManifest.xml:13:22-77
+21
+22    <queries>
+22-->[androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:24:5-34:15
+23        <intent>
+23-->[androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:25:9-27:18
+24            <action android:name="android.media.browse.MediaBrowserService" />
+24-->[androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:26:13-79
+24-->[androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:26:21-76
+25        </intent>
+26        <intent>
+26-->[androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:28:9-30:18
+27            <action android:name="androidx.media2.session.MediaSessionService" />
+27-->[androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:29:13-82
+27-->[androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:29:21-79
+28        </intent>
+29        <intent>
+29-->[androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:31:9-33:18
+30            <action android:name="androidx.media2.session.MediaLibraryService" />
+30-->[androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:32:13-82
+30-->[androidx.media2:media2-session:1.2.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:32:21-79
+31        </intent>
+32    </queries>
+33
+34    <application
+35        android:name="android.app.Application"
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.8.0] /home/fernando/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:24:18-86
+37        android:debuggable="true"
+38        android:icon="@mipmap/ic_launcher"
+39        android:label="app_audio" >
+40        <activity
+41            android:name="com.example.app_audio.MainActivity"
+42            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+43            android:exported="true"
+44            android:hardwareAccelerated="true"
+45            android:launchMode="singleTop"
+46            android:theme="@style/LaunchTheme"
+47            android:windowSoftInputMode="adjustResize" >
+48
+49            <!--
+50                 Specifies an Android theme to apply to this Activity as soon as
+51                 the Android process has started. This theme is visible to the user
+52                 while the Flutter UI initializes. After that, this theme continues
+53                 to determine the Window background behind the Flutter UI.
+54            -->
+55            <meta-data
+56                android:name="io.flutter.embedding.android.NormalTheme"
+57                android:resource="@style/NormalTheme" />
+58
+59            <intent-filter>
+60                <action android:name="android.intent.action.MAIN" />
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+63            </intent-filter>
+64        </activity>
+65        <!--
+66             Don't delete the meta-data below.
+67             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+68        -->
+69        <meta-data
+70            android:name="flutterEmbedding"
+71            android:value="2" />
+72
+73        <uses-library
+73-->[androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+74            android:name="androidx.window.extensions"
+74-->[androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+75            android:required="false" />
+75-->[androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+76        <uses-library
+76-->[androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+77            android:name="androidx.window.sidecar"
+77-->[androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+78            android:required="false" />
+78-->[androidx.window:window:1.0.0-beta04] /home/fernando/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+79    </application>
+80
+81</manifest>

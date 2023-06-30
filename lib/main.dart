@@ -1,5 +1,7 @@
 import 'dart:async';
 import 'dart:io';
+import 'package:audio_session/audio_session.dart';
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sound/flutter_sound.dart';
 import 'package:path_provider/path_provider.dart';
@@ -19,7 +21,7 @@ class AudioRecorderScreen extends StatefulWidget {
 
 class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
   FlutterSoundPlayer _audioPlayer = FlutterSoundPlayer();
-   FlutterSoundRecorder _audioRecorder = FlutterSoundRecorder();
+  FlutterSoundRecorder _audioRecorder = FlutterSoundRecorder();
   String _filePath = '';
   int _elapsedTime = 0;
   Timer? _timer;
@@ -31,7 +33,19 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     _initAudioRecorder();
   }
 
- Future<void> _initAudioRecorder() async {
+  Future<void> _init() async {
+    try {
+      final player = AudioPlayer();
+      await player.play(UrlSource(
+          'https://s3.amazonaws.com/scifri-episodes/scifri20181123-episode.mp3'));
+    } catch (e) {
+      print("Error loading audio source: $e");
+    }
+  }
+
+  final session = AudioSession.instance;
+
+  Future<void> _initAudioRecorder() async {
     await _audioRecorder!.openRecorder();
   }
 
@@ -50,11 +64,16 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
 
     Directory appDir = await getApplicationDocumentsDirectory();
     String basePath = appDir.path;
-    _filePath = '$basePath/audio_recording.mp4';
-     await _audioRecorder.startRecorder(
+    _filePath = audioFileName();
+    await _audioRecorder.startRecorder(
       toFile: _filePath,
       codec: Codec.aacMP4,
     );
+  }
+
+  String audioFileName() {
+    DateTime now = DateTime.now();
+    return "AUD${now.year}${now.month}${now.day}${now.hour}${now.minute}${now.second}${now.millisecond}.mp4";
   }
 
   Future<void> _stopRecording() async {
@@ -84,8 +103,7 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     PermissionStatus status = await Permission.storage.request();
     if (status.isGranted) {
     } else if (status.isDenied) {
-    } else if (status.isPermanentlyDenied) {
-    }
+    } else if (status.isPermanentlyDenied) {}
   }
 
   @override
@@ -107,7 +125,7 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
               child: Text('Stop Recording'),
             ),
             ElevatedButton(
-              onPressed: _playAudio,
+              onPressed: _init,
               child: Text('Play Recording'),
             ),
             SizedBox(height: 16),
