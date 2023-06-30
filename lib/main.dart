@@ -29,9 +29,21 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
   @override
   void initState() {
     super.initState();
-    _requestStoragePermission();
+    _requestPermission();
     _initAudioRecorder();
   }
+
+  Future _requestPermission() async {
+    Map<Permission, PermissionStatus> statuses = await [
+      Permission.microphone,
+      Permission.audio,
+      Permission.mediaLibrary,
+      Permission.storage,
+      Permission.speech,
+      Permission.photos
+    ].request();
+  }
+
 
   Future<void> _initUrl() async {
     try {
@@ -58,19 +70,12 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
   }
 
   Future<void> _startRecording() async {
-    PermissionStatus status = await Permission.microphone.request();
-
-    if (status != PermissionStatus.granted) {
-      throw RecordingPermissionException('Microphone permission not granted');
-    }
-
     _timer = Timer.periodic(Duration(seconds: 1), (_) {
       setState(() {
         _elapsedTime++;
       });
     });
 
-    
     _filePath = await audioFileName();
     await _audioRecorder.startRecorder(
       toFile: _filePath,
@@ -78,7 +83,7 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     );
   }
 
-  Future<String> audioFileName() async{
+  Future<String> audioFileName() async {
     DateTime now = DateTime.now();
     Directory appDir = await getApplicationDocumentsDirectory();
     String basePath = appDir.path;
