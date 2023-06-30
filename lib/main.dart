@@ -35,7 +35,7 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
 
   Future<void> _initUrl() async {
     try {
-      final player = AudioPlayer();
+      final player = AudioPlayer(playerId: "mubi");
       await player.play(UrlSource(
           'https://s3.amazonaws.com/scifri-episodes/scifri20181123-episode.mp3'));
     } catch (e) {
@@ -45,7 +45,7 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
 
   Future<void> _initLocal() async {
     try {
-      final player = AudioPlayer();
+      final player = AudioPlayer(playerId: "mubi");
       await player.setSourceDeviceFile(_filePath);
       await player.play(DeviceFileSource(_filePath));
     } catch (e) {
