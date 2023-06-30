@@ -33,7 +33,7 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     _initAudioRecorder();
   }
 
-  Future<void> _init() async {
+  Future<void> _initUrl() async {
     try {
       final player = AudioPlayer();
       await player.play(UrlSource(
@@ -43,7 +43,15 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     }
   }
 
-  final session = AudioSession.instance;
+  Future<void> _initLocal() async {
+    try {
+      final player = AudioPlayer();
+      await player.setSourceDeviceFile(_filePath);
+      await player.play(DeviceFileSource(_filePath));
+    } catch (e) {
+      print("Error loading audio source: $e");
+    }
+  }
 
   Future<void> _initAudioRecorder() async {
     await _audioRecorder!.openRecorder();
@@ -62,18 +70,19 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
       });
     });
 
-    Directory appDir = await getApplicationDocumentsDirectory();
-    String basePath = appDir.path;
-    _filePath = audioFileName();
+    
+    _filePath = await audioFileName();
     await _audioRecorder.startRecorder(
       toFile: _filePath,
       codec: Codec.aacMP4,
     );
   }
 
-  String audioFileName() {
+  Future<String> audioFileName() async{
     DateTime now = DateTime.now();
-    return "AUD${now.year}${now.month}${now.day}${now.hour}${now.minute}${now.second}${now.millisecond}.mp4";
+    Directory appDir = await getApplicationDocumentsDirectory();
+    String basePath = appDir.path;
+    return "${basePath}/AUD${now.year}${now.month}${now.day}${now.hour}${now.minute}${now.second}${now.millisecond}.mp4";
   }
 
   Future<void> _stopRecording() async {
@@ -125,8 +134,12 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
               child: Text('Stop Recording'),
             ),
             ElevatedButton(
-              onPressed: _init,
+              onPressed: _initLocal,
               child: Text('Play Recording'),
+            ),
+            ElevatedButton(
+              onPressed: _initUrl,
+              child: Text('Play Recording server'),
             ),
             SizedBox(height: 16),
             Text('Elapsed Time: $_elapsedTime seconds'),
