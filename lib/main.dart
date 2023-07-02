@@ -28,17 +28,14 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
   @override
   void initState() {
     super.initState();
-    
+
     _configAudioRecorder();
   }
 
   Future _requestPermission() async {
-    Map<Permission, PermissionStatus> statuses = await [
-      Permission.microphone,
-      Permission.audio
-    ].request();
+    Map<Permission, PermissionStatus> statuses =
+        await [Permission.microphone, Permission.audio].request();
   }
-
 
   Future<void> _configAudioRecorder() async {
     await _audioRecorder.openRecorder();
@@ -76,6 +73,21 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
   Future<void> _playAudioLocal() async {
     try {
       final player = AudioPlayer(playerId: "teste1");
+      player.setAudioContext(AudioContext(
+          android: AudioContextAndroid(
+            isSpeakerphoneOn: false,
+            stayAwake: true,
+            contentType: AndroidContentType.music,
+            usageType: AndroidUsageType.media,
+            audioFocus: AndroidAudioFocus.gain,
+          ),
+          iOS: AudioContextIOS(
+              defaultToSpeaker: false,
+              category: AVAudioSessionCategory.playback,
+              options: [AVAudioSessionOptions.mixWithOthers] +
+                  [AVAudioSessionOptions.allowAirPlay] +
+                  [AVAudioSessionOptions.allowBluetooth] +
+                  [AVAudioSessionOptions.allowBluetoothA2DP])));
       await player.setSourceDeviceFile(_filePath);
       await player.play(DeviceFileSource(_filePath));
     } catch (e) {
