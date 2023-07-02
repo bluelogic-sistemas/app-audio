@@ -82,12 +82,12 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
             audioFocus: AndroidAudioFocus.gain,
           ),
           iOS: AudioContextIOS(
-              defaultToSpeaker: false,
-              category: AVAudioSessionCategory.playback,
-              options: [AVAudioSessionOptions.mixWithOthers] +
-                  [AVAudioSessionOptions.allowAirPlay] +
-                  [AVAudioSessionOptions.allowBluetooth] +
-                  [AVAudioSessionOptions.allowBluetoothA2DP])));
+              defaultToSpeaker: true,
+              category: AVAudioSessionCategory.ambient,
+              options: [
+                AVAudioSessionOptions.defaultToSpeaker,
+                AVAudioSessionOptions.mixWithOthers,
+              ])));
       await player.setSourceDeviceFile(_filePath);
       await player.play(DeviceFileSource(_filePath));
     } catch (e) {
