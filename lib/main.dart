@@ -73,21 +73,7 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
   Future<void> _playAudioLocal() async {
     try {
       final player = AudioPlayer(playerId: "teste1");
-      player.setAudioContext(AudioContext(
-          android: AudioContextAndroid(
-            isSpeakerphoneOn: false,
-            stayAwake: true,
-            contentType: AndroidContentType.music,
-            usageType: AndroidUsageType.media,
-            audioFocus: AndroidAudioFocus.gain,
-          ),
-          iOS: AudioContextIOS(
-              defaultToSpeaker: true,
-              category: AVAudioSessionCategory.ambient,
-              options: [
-                AVAudioSessionOptions.defaultToSpeaker,
-                AVAudioSessionOptions.mixWithOthers,
-              ])));
+      await player.setVolume(1);
       await player.setSourceDeviceFile(_filePath);
       await player.play(DeviceFileSource(_filePath));
     } catch (e) {
