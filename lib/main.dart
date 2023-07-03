@@ -85,7 +85,7 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     try {
       final player = AudioPlayer(playerId: "teste1");
       await player.play(UrlSource(
-          'https://s3.amazonaws.com/scifri-episodes/scifri20181123-episode.mp3'));
+          'https://res.cloudinary.com/das1rnjvi/video/upload/v1688418840/bluelogic/oneid/file_example_OOG_1MG_w3aotg.ogg'));
     } catch (e) {
       print("Error loading audio source: $e");
     }
