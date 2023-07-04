@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sound/flutter_sound.dart';
+import 'package:flutter_sound_platform_interface/flutter_sound_recorder_platform_interface.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 
@@ -22,6 +23,7 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
   FlutterSoundPlayer _audioPlayer = FlutterSoundPlayer();
   FlutterSoundRecorder _audioRecorder = FlutterSoundRecorder();
   String _filePath = '';
+  String _filePathMp3 = '';
   int _elapsedTime = 0;
   Timer? _timer;
 
@@ -38,7 +40,7 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
   }
 
   Future<void> _configAudioRecorder() async {
-    await _audioRecorder.openRecorder();
+    await _audioRecorder.openAudioSession();
   }
 
   Future<void> _startRecording() async {
@@ -49,18 +51,17 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
       });
     });
 
-    _filePath = await audioFileName();
+    _filePath = await audioFileName("aac");
+    _filePathMp3 = await audioFileName("mp3");
     await _audioRecorder.startRecorder(
-      toFile: _filePath,
-      codec: Codec.aacMP4,
-    );
+        toFile: _filePath, audioSource: AudioSource.microphone);
   }
 
-  Future<String> audioFileName() async {
+  Future<String> audioFileName(typeFile) async {
     DateTime now = DateTime.now();
     Directory appDir = await getApplicationDocumentsDirectory();
     String basePath = appDir.path;
-    return "${basePath}/AUD${now.year}${now.month}${now.day}${now.hour}${now.minute}${now.second}${now.millisecond}.mp4";
+    return "${basePath}/AUD${now.year}${now.month}${now.day}${now.hour}${now.minute}${now.second}${now.millisecond}.$typeFile";
   }
 
   Future<void> _stopRecording() async {
@@ -74,8 +75,12 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     try {
       final player = AudioPlayer(playerId: "teste1");
       await player.setVolume(1);
-      await player.setSourceDeviceFile(_filePath);
-      await player.play(DeviceFileSource(_filePath));
+      await FlutterSoundHelper()
+        .convertFile(_filePath, Codec.aacADTS, _filePathMp3, Codec.mp3);
+      
+      //_filePath = await convertToOgg(_filePath, _filePath.replaceAll(".mp4", ".mp3"));
+      await player.setSourceDeviceFile(_filePathMp3);
+      await player.play(DeviceFileSource(_filePathMp3));
     } catch (e) {
       print("Error loading audio source: $e");
     }
