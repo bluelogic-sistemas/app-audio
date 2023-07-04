@@ -1,11 +1,13 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:typed_data';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sound/flutter_sound.dart';
 import 'package:flutter_sound_platform_interface/flutter_sound_recorder_platform_interface.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:http/http.dart' as http;
 
 void main() {
   runApp(MaterialApp(
@@ -76,8 +78,8 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
       final player = AudioPlayer(playerId: "teste1");
       await player.setVolume(1);
       await FlutterSoundHelper()
-        .convertFile(_filePath, Codec.aacADTS, _filePathMp3, Codec.mp3);
-      
+          .convertFile(_filePath, Codec.aacADTS, _filePathMp3, Codec.mp3);
+
       //_filePath = await convertToOgg(_filePath, _filePath.replaceAll(".mp4", ".mp3"));
       await player.setSourceDeviceFile(_filePathMp3);
       await player.play(DeviceFileSource(_filePathMp3));
@@ -89,10 +91,21 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
   Future<void> _playAudioServer() async {
     try {
       final player = AudioPlayer(playerId: "teste1");
-      await player.play(UrlSource(
-          'https://res.cloudinary.com/das1rnjvi/video/upload/v1688418840/bluelogic/oneid/file_example_OOG_1MG_w3aotg.ogg'));
+      final fileBytes = await downloadFileAsBytes(
+          'https://s3.amazonaws.com/dadosusuarios/100000/producao/mubichat/2023/07/04072023090133_3A71A20BE47A3CA417A4.ogg');
+      await player.play(BytesSource(fileBytes));
     } catch (e) {
       print("Error loading audio source: $e");
+    }
+  }
+
+  Future<Uint8List> downloadFileAsBytes(String url) async {
+    final response = await http.get(Uri.parse(url));
+
+    if (response.statusCode == 200) {
+      return Uint8List.fromList(response.bodyBytes);
+    } else {
+      throw Exception('Failed to download file: ${response.statusCode}');
     }
   }
 
