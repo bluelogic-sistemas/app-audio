@@ -91,11 +91,30 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
   Future<void> _playAudioServer() async {
     try {
       final player = AudioPlayer(playerId: "teste1");
-      final fileBytes = await downloadFileAsBytes(
-          'https://s3.amazonaws.com/dadosusuarios/100000/producao/mubichat/2023/07/04072023090133_3A71A20BE47A3CA417A4.ogg');
-      await player.play(BytesSource(fileBytes));
+      _filePath = await audioFileName("ogg");
+      _filePathMp3 = await audioFileName("mp4");
+      await downloadAndSaveFile("https://s3.amazonaws.com/dadosusuarios/100000/producao/mubichat/2023/07/04072023090133_3A71A20BE47A3CA417A4.ogg", _filePath);
+      // final fileBytes = await downloadFileAsBytes(
+      //     'https://s3.amazonaws.com/dadosusuarios/100000/producao/mubichat/2023/07/04072023090133_3A71A20BE47A3CA417A4.ogg');
+
+      await FlutterSoundHelper()
+          .convertFile(_filePath, Codec.opusOGG, _filePathMp3, Codec.aacMP4);
+
+      await player.setSourceDeviceFile(_filePathMp3);
+      await player.play(DeviceFileSource(_filePathMp3));
     } catch (e) {
       print("Error loading audio source: $e");
+    }
+  }
+
+  Future<void> downloadAndSaveFile(String url, String filePath) async {
+    final response = await http.get(Uri.parse(url));
+
+    if (response.statusCode == 200) {
+      final file = File(filePath);
+      await file.writeAsBytes(response.bodyBytes);
+    } else {
+      throw Exception('Failed to download file: ${response.statusCode}');
     }
   }
 
